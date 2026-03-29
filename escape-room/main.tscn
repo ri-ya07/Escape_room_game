@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dsw22f5nvq14b"]
+
+[ext_resource type="Texture2D" uid="uid://b80n6kgso7tbl" path="res://f0e35159-14fd-428a-b482-f68498e57e5d.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cycuxj0ew8fti" path="res://sofa.png" id="2_7mycd"]
+[ext_resource type="Texture2D" uid="uid://e3jxh0ik3m27" path="res://mid cushion.png" id="3_272bh"]
+[ext_resource type="Texture2D" uid="uid://1wopet53mfj0" path="res://right cushion.png" id="4_5vw27"]
+[ext_resource type="Texture2D" uid="uid://djk6jxjpdjw8w" path="res://left cushion.png" id="5_kek77"]
+[ext_resource type="Texture2D" uid="uid://cj2j2jujl5xmq" path="res://vecteezy_blank-transparent-sheet-of-wrinkled-paper-placed-on-clean_57446934.png" id="6_4c57u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
+size = Vector2(355.3105, 243.17755)
+
+[node name="Main" type="Node2D" unique_id=1836139722]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1274430128]
+position = Vector2(603.6, 324)
+scale = Vector2(0.6958333, 0.6)
+texture = ExtResource("1_ig7tw")
+
+[node name="sofa" type="Sprite2D" parent="." unique_id=339686203]
+position = Vector2(700.99994, 372)
+scale = Vector2(0.31522623, 0.35754398)
+texture = ExtResource("2_7mycd")
+
+[node name="mid cushion" type="Sprite2D" parent="sofa" unique_id=1333279329]
+position = Vector2(15.861861, -72.7183)
+scale = Vector2(0.68436384, 0.686919)
+texture = ExtResource("3_272bh")
+
+[node name="right cushion" type="Sprite2D" parent="sofa" unique_id=1108346012]
+z_index = 1
+position = Vector2(339.439, -89.49949)
+scale = Vector2(0.7589068, 0.7043494)
+texture = ExtResource("4_5vw27")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sofa/right cushion" unique_id=383051802]
+position = Vector2(-22.990723, 2.463623)
+scale = Vector2(1.0000007, 1)
+shape = SubResource("RectangleShape2D_7mycd")
+
+[node name="left cushion" type="Sprite2D" parent="sofa" unique_id=90424478]
+position = Vector2(-336.2663, -89.49945)
+scale = Vector2(0.79997766, 0.7340936)
+texture = ExtResource("5_kek77")
+
+[node name="paper" type="Sprite2D" parent="sofa" unique_id=957965748]
+visible = false
+position = Vector2(339.439, -89.499)
+scale = Vector2(0.043952476, 0.030044364)
+texture = ExtResource("6_4c57u")
