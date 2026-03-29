@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d120es2h0m87q"]
+
+[ext_resource type="Texture2D" uid="uid://b64srnhy7hfuy" path="res://Assets/WhatsApp Image 2026-03-29 at 1.10.53 PM.jpeg" id="1_hg140"]
+[ext_resource type="Script" uid="uid://dkw2xijjvxoup" path="res://Scenes/area_2d.gd" id="2_0ahhb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsw8b"]
+size = Vector2(221.74677, 160.63913)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ahhb"]
+
+[node name="Scene" type="Node2D" unique_id=94511330]
+
+[node name="WhatsAppImage20260329At1_10_53Pm" type="Sprite2D" parent="." unique_id=2029414296]
+position = Vector2(583, 327.24402)
+scale = Vector2(0.7395833, 0.62257034)
+texture = ExtResource("1_hg140")
+
+[node name="Area2D" type="Area2D" parent="WhatsAppImage20260329At1_10_53Pm" unique_id=1847543796]
+script = ExtResource("2_0ahhb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WhatsAppImage20260329At1_10_53Pm/Area2D" unique_id=53972890]
+position = Vector2(527.3241, 105.612854)
+shape = SubResource("RectangleShape2D_tsw8b")
+
+[node name="Desk" type="Area2D" parent="WhatsAppImage20260329At1_10_53Pm" unique_id=1914627822]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WhatsAppImage20260329At1_10_53Pm/Desk" unique_id=1051756153]
+shape = SubResource("RectangleShape2D_0ahhb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1772887433]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=976888903]
+offset_right = 40.0
+offset_bottom = 23.0
+vertical_alignment = 2
