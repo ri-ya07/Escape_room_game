@@ -1,1 +1,29 @@
-🚀 Project OverviewThis game challenges players to solve a series of puzzles within a digital environment to "escape" the room. It utilizes a modular interaction system and a custom inventory backend.Key FeaturesPoint-and-Click Mechanics: Custom Area2D hotspots for environmental interaction.Inventory System: Global state management to track collected items (Keys, Notes, etc.).Puzzle Logic: Modular scripts for keypads, combined items, and locked doors.Dynamic UI: A CanvasLayer based dialogue system for player feedback.🛠 Tech StackComponentTechnologyEngineGodot 4.xScriptingGDScript (Python-like syntax)Version ControlGit / GitHubArchitectureSignal-based Decoupled Logic📂 Folder StructureScenes/: Contains .tscn files for the levels, UI, and puzzles.Scripts/: All .gd logic files for player interaction and game state.Assets/: Images, textures, and audio files.Prefabs/: Reusable game objects (e.g., a generic "Locked Door").👥 Collaboration (Git Workflow)To contribute to this project, please follow these steps:Clone the Repo: git clone <repository-url>Create a Branch: git checkout -b feature/your-feature-nameCommit Changes: git commit -m "Add: Descriptive message about change"Push: git push origin feature/your-feature-namePull Request: Open a PR for review before merging into ma
+# 🧩 Escape Room: Digital Logic & State Management
+A collaborative point-and-click escape game built with **Godot 4**.
+
+## 🚀 Overview
+This project is a technical demonstration of game state management and UI/UX design. The goal is to solve logic-based puzzles to progress through a digitally rendered environment.
+
+### 🛠 Core Technical Stack
+* **Engine:** Godot 4.x (GDScript)
+* **Architecture:** Signal-based Event Handling (Decoupled Design)
+* **Version Control:** Git / GitHub
+* **State Management:** Global Autoload Singletons
+
+## 📁 Repository Structure
+* `/scenes` - Scene files (.tscn) for rooms and UI overlays.
+* `/scripts` - GDScript logic for puzzles, inventory, and player interaction.
+* `/assets` - Textures, sprites, and audio files.
+* `/prefabs` - Reusable game objects (e.g., interactive drawers, locks).
+
+## 👥 Collaborative Workflow
+To maintain a clean repository and avoid merge conflicts:
+1. **Branching:** Create a new branch for every feature: `git checkout -b feature/item-pickup`.
+2. **Atomic Commits:** Make small, descriptive commits.
+3. **Conflict Prevention:** Coordinate with your partner before editing `.tscn` files, as these are large XML-like files that can be tricky to merge.
+
+## 📈 Professional Objectives
+This project demonstrates:
+* **Object-Oriented Programming (OOP):** Leveraging Godot's node-based inheritance.
+* **Systems Design:** Creating an extensible inventory and flag system.
+* **Collaboration:** Professional Git workflow and documentation.
